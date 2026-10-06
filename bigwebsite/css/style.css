@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 2400px;
+  min-height: 2400px;
+}
+body {
+  background-color: #e9e4d9;
+  color: #20221d;
+}
+.museum-canvas {
+  position: relative;
+  width: 2500px;
+  height: 2450px;
+  overflow: hidden;
+  background-color: #e9e4d9;
+  background-image: radial-gradient(#b2ad9e 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.entrance {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 790px;
+  padding: 42px 0;
+  text-align: left;
+}
+#entrance {
+  color: #20221d;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+h1 {
+  margin-bottom: 22px;
+  font-size: 88px;
+  line-height: 1.25;
+  letter-spacing: -5px;
+}
+h1 span {
+  color: #a14e35;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}
+.intro {
+  width: 430px;
+  margin-bottom: 38px;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.coordinates {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+.gallery {
+  position: absolute;
+  width: 750px;
+  height: 620px;
+}
+.gallery-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  border-top: 1px solid #20221d;
+  padding-top: 10px;
+}
+.gallery-heading p {
+  margin-bottom: 6px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.gallery-heading h2 {
+  margin-bottom: 8px;
+  font-size: 36px;
+  line-height: 1;
+}
+.gallery-heading span {
+  color: #a14e35;
+  font-size: 11px;
+}
+.long-haired {
+  top: 1340px;
+  left: 260px;
+}
+.sleek {
+  top: 380px;
+  left: 1430px;
+}
+.unusual {
+  top: 1480px;
+  left: 1490px;
+}
+.exhibit {
+  position: absolute;
+  width: 200px;
+  background-color: #f8f5ed;
+  border: 1px solid #20221d;
+  padding: 8px;
+  box-shadow: 8px 8px 0 rgba(32, 34, 29, 0.12);
+}
+.exhibit img {
+  display: block;
+  width: 182px;
+  height: 160px;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+.label {
+  padding: 12px 3px 3px;
+}
+.label h3 {
+  margin-bottom: 12px;
+  font-size: 23px;
+  line-height: 0.9;
+}
+.label p {
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.label b {
+  color: #a14e35;
+  font-weight: 500;
+}
+.maine {
+  top: 85px;
+  left: 258px;
+  transform: rotate(-3deg);
+}
+.ragdoll {
+  top: 300px;
+  left: 500px;
+  transform: rotate(4deg);
+}
+.persian {
+  top: 160px;
+  left: 20px;
+  transform: rotate(2deg);
+}
+.siamese {
+  top: 80px;
+  left: 275px;
+  transform: rotate(3deg);
+}
+.russian {
+  top: 272px;
+  left: 520px;
+  transform: rotate(-3deg);
+}
+.bengal {
+  top: 345px;
+  left: 20px;
+  transform: rotate(-2deg);
+}
+.sphynx {
+  top: 105px;
+  left: 255px;
+  transform: rotate(3deg);
+}
+.scottish {
+  top: 310px;
+  left: 495px;
+  transform: rotate(-4deg);
+}
+.devon {
+  top: 315px;
+  left: 15px;
+  transform: rotate(2deg);
+}
+.map-key {
+  position: absolute;
+  left: 145px;
+  bottom: 135px;
+  width: 780px;
+  border-top: 1px solid #20221d;
+  padding-top: 12px;
+  color: #6d6b61;
+  font-size: 10px;
+  text-align: left;
+}
+.map-key span {
+  color: #a14e35;
+  font-size: 12px;
+  font-weight: 500;
+}
+.map-key p {
+  display: inline-block;
+  margin: 0 0 0 38px;
+}
