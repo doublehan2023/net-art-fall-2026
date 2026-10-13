@@ -1,0 +1,85 @@
+:root {
+  --paper: #faf7f0;
+  --line: #e8ded1;
+  --red: #ef4937;
+  --orange: #ed8738;
+  --peach: #efab88;
+  --green: #72ad78;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+}
+
+.quilt {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.tile {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  min-height: 0;
+  position: relative;
+}
+
+.tab {
+  height: clamp(34px, 31%, 62px);
+  position: absolute;
+  width: clamp(34px, 31%, 62px);
+  z-index: 1;
+}
+
+.top {
+  border-radius: 0 0 9px 9px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.right {
+  border-radius: 9px 0 0 9px;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.bottom {
+  border-radius: 9px 9px 0 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.left {
+  border-radius: 0 9px 9px 0;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.red { background: var(--red); }
+.orange { background: var(--orange); }
+.peach { background: var(--peach); }
+.green { background: var(--green); }
+.white-tab { background: var(--paper); }
+
+.tile:not(.white) .white-tab {
+  box-shadow: inset 0 0 0 1px rgba(104, 82, 60, 0.09);
+}
+
+.tile.white .tab {
+  box-shadow: 0 1px 2px rgba(104, 82, 60, 0.11);
+}
+
+@media (max-width: 700px) {
+  .quilt {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
