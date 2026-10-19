@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.stage {
+  animation: animateBg 10s linear infinite;
+  animation-play-state: paused;
+  background-image: linear-gradient(
+    0deg,
+    #cf5c5c,
+    #c19b4a,
+    #def2a0,
+    #c6ee4a,
+    #42eca6,
+    #64b3d9,
+    #208ea2,
+    #498ada,
+    #5b73df,
+    #897ed3,
+    #cf5c5c,
+    #c19b4a
+  );
+  background-size: 100% 1100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.stage:has(.trigger:hover) {
+  animation-play-state: running;
+}
+
+.trigger {
+  appearance: none;
+  background: #fff;
+  border: 2px solid #202020;
+  border-radius: 999px;
+  color: #202020;
+  cursor: pointer;
+  font: 600 1rem/1 system-ui, sans-serif;
+  padding: 0.9rem 1.5rem;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.trigger:hover {
+  box-shadow: 4px 4px 0 #202020;
+  transform: translate(-2px, -2px);
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
