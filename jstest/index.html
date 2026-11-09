@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Happiness Vending Machine</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="intro">
+        <h1>Tiny Happiness<br />Vending Machine</h1>
+        <p class="subtitle">a sweet message, just for you</p>
+      </header>
+
+      <section class="machine" aria-label="Happiness vending machine">
+        <div class="bow" aria-hidden="true">🎀</div>
+        <div class="machine-heading">♡ little happiness shop ♡</div>
+        <div class="machine-window" aria-hidden="true">
+          <div class="shelf"><span>💌</span><span>🌷</span><span>🧸</span></div>
+          <div class="shelf"><span>🍓</span><span>🎀</span><span>⭐</span></div>
+        </div>
+        <div class="machine-controls">
+          <button id="dispenseButton" type="button">PRESS FOR JOY</button>
+        </div>
+        <div class="slot" aria-hidden="true"><span>♡</span></div>
+      </section>
+
+      <section class="message-card" aria-live="polite" aria-atomic="true">
+        <p class="card-label">YOUR LITTLE NOTE</p>
+        <p id="message">Your happiness is waiting! Press the button above.</p>
+      </section>
+    </main>
+  </body>
+</html>
